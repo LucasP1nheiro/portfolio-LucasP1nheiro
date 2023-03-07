@@ -15,7 +15,7 @@ function App() {
   
 
   return (
-    <div className="bg-paleBlue min-h-screen max-h-auto min-w-screen overflow-x-hidden flex flex-col items-center max-[376px]:justify-end justify-center pt-12 md:pt-48">
+    <div className="bg-paleBlue min-h-screen max-h-auto min-w-screen overflow-x-hidden flex flex-col items-center  justify-center pt-12 md:pt-48">
       
       <BrowserRouter>
         

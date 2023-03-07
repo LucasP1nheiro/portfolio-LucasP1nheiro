@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div
-      className="h-full w-full bg-paleBlue flex items-start justify-around md:justify-evenly pr-8 py-4 sm:p-0"
+      className="h-full w-full bg-paleBlue flex flex-col xl:flex-row items-center justify-end md:justify-evenly p-4 sm:p-0"
     >
           <div className="flex flex-col justify-start gap-4 md:gap-12 items-start h-full">
         <motion.img
@@ -46,7 +46,7 @@ const Home = () => {
                 <span className="z-10">Contact me </span>
           </Link >
           
-          <div className="flex w-1/3  justify-around py-2">
+          <div className="flex w-1/3  justify-around py-2 gap-6 ">
             <GitHub />
             <LinkedIn />
           </div>
