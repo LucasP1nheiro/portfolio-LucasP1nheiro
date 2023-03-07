@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,800&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00FFFF;
+  border-radius: 16px;
+}
+
+
+
+
+
+@layer utilities {
+  .btn{
+    @apply bg-royalBlue text-sm md:text-xl text-paleBlue tracking-[0.05em]  xl:tracking-[0.125em] uppercase w-[150px] md:w-[250px] h-[60px] flex justify-around items-center relative 
+  }
+
+  .btn::before{
+    @apply  content-[''] absolute w-[100%] h-[100%] bg-eggPlant top-0 left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500
+  }
+
+  .btn:hover::before{
+    @apply scale-x-100 origin-left
+  }
+
+  .input{
+    @apply outline-none border-b-2 border-royalBlue  bg-paleBlue  w-full text-eggPlant h-full relative
+  }
+
+  .input::before{ 
+    @apply content-[''] absolute w-[100%] h-[100%] bg-paleBlue border-b-2 border-eggPlant top-0 left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500 
+  }
+
+  .input:hover::before{
+    @apply scale-x-[-100%] origin-left
+  }
+
+  .inputDiv {
+    @apply flex flex-col relative
+  }
+
+  .inputBox {
+    @apply bg-transparent border-[2px] border-royalBlue p-3 rounded-md outline-none text-royalBlue 
+  }
+
+  .inputBox:valid, .inputBox:focus {
+    @apply border-eggPlant 
+  }
+
+  .inputBox~span {
+    @apply absolute text-royalBlue p-[15px] uppercase tracking-[3px] pointer-events-none duration-200
+  }
+
+  .inputBox:valid~span, 
+  .inputBox:focus~span{
+    @apply text-eggPlant transform translate-x-[20px] translate-y-[-10px] text-[13px] py-0 bg-paleBlue border-x-[2px] border-eggPlant tracking-[3px]
+  }
+}
