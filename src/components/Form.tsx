@@ -23,7 +23,7 @@ const Form = () => {
           action="https://formsubmit.co/lps1704@gmail.com" method="POST"
           autoComplete="off"
       >
-          <input type="hidden" name="_next" value={`http://192.168.15.12:5173/form-submited/${name}`} />
+          <input type="hidden" name="_next" value={`https://portfolio-lucasp1nheiro.vercel.app/form-submited/${name}`} />
           <input type="hidden" name="_captcha" value="false"/>
           <motion.div
               initial={{ x: '-100vw' }}
