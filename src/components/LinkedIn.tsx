@@ -38,7 +38,7 @@ const LinkedIn = () => {
   return (
       <div>
           
-          <a href="https://github.com/LucasP1nheiro/">
+          <a href="https://www.linkedin.com/in/lucas-pinheiro-134261269/">
           <svg viewBox="0 0 128 128" className="h-12">
               <motion.path
                   variants={pathBgVariants}

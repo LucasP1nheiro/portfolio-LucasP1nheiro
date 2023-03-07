@@ -17,7 +17,7 @@ const Skill = ({ name }: SkillProps) => {
 
   return (
       <div className="flex flex-col hover:cursor-pointer  items-center w-fit gap-2" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} >
-          <img src={`../assets/${name}.svg`} alt={name} className="h-20" />
+          <img src={`./src/assets/${name}.svg`} alt={name} className="h-20" />
           
               {hover  ? (
                 <motion.p
