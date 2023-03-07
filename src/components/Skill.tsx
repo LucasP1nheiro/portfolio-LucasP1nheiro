@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import tailwind from 'tailwind.svg'
-import react from 'react.svg'
-import typescript from 'typescript.svg'
-import git from 'git.svg'
-import javascript from 'javascrio.svg'
-import html from 'html.svg'
-import css from 'css.svg'
+import tailwind from '../assets/tailwind.svg'
+import react from '../assets/react.svg'
+import typescript from '../assets/typescript.svg'
+import git from '../assets/git.svg'
+import javascript from '../assets/javascrio.svg'
+import html from '../assets/html.svg'
+import css from '../assets/css.svg'
 import {motion} from 'framer-motion'
 
 interface SkillProps {
