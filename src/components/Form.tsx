@@ -19,7 +19,7 @@ const Form = () => {
     
   return (
       <form
-          className="flex flex-col gap-2 2xl:w-2/3 w-full bg-paleBlue"
+          className="flex flex-col gap-2 2xl:w-2/3 xl:w-4/5 w-full bg-paleBlue"
           action="https://formsubmit.co/lps1704@gmail.com" method="POST"
           autoComplete="off"
       >

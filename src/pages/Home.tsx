@@ -16,7 +16,7 @@ const Home = () => {
     <div
       className="h-full w-full bg-paleBlue flex flex-col xl:flex-row items-center justify-end md:justify-evenly p-4 sm:p-0"
     >
-          <div className="flex flex-col justify-start gap-4 md:gap-12 items-start h-full">
+          <div className="flex flex-col justify-start gap-12 md:gap-12 items-start h-full">
         <motion.img
           initial={{ x: '100vw' }}
           animate={{ x: 0 }}
@@ -28,9 +28,9 @@ const Home = () => {
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
           transition={{ duration: 0.75}}
-          className="text-2xl xl:text-6xl sm:text-4xl text-royalBlue"
+          className="text-2xl 2xl:text-6xl sm:text-4xl xl:text-5xl text-royalBlue"
         >
-          Hi, my name is<h1 className=" text-eggPlant text-3xl xl:text-8xl sm:text-6xl">Lucas Pinheiro</h1> Welcome to my website!
+          Hi, my name is<h1 className=" text-eggPlant text-3xl 2xl:text-8xl sm:text-6xl xl:text-7xl">Lucas Pinheiro</h1> Welcome to my website!
         </motion.h1>
 
         <motion.div
@@ -56,7 +56,7 @@ const Home = () => {
             initial={{ x: '100vw'}}
             animate={{ x: 0 }}
             transition={{ duration: 1 }}
-            src={developer} alt="Developer Image" className="h-96 hidden xl:block"
+            src={developer} alt="Developer Image" className="2xl:h-96 h-80 hidden xl:block"
         />
       </div>
   )

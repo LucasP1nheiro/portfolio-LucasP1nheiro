@@ -50,20 +50,20 @@ const Project = ({ name }: ProjectProps) => {
       >
       {possibleProjects.map((project, index) => 
         name === project.name && (
-          <div className="w-4/5 min-h-full  flex flex-col xl:flex-row items-end justify-between sm:mt-48 xl:mt-0 ">
+          <div className="w-4/5 min-h-full  flex flex-col xl:flex-row items-start xl:items-center justify-between  xl:mt-0 ">
             <motion.img
               initial={{ x: '-100vw' }}
               animate={{ x: 0 }}
               transition={{ duration: 1 }}
-              src={project.image} alt="Pomodoro Project" className="md:h-96 h-72"
+              src={project.image} alt="Pomodoro Project" className="2xl:h-96 h-72 md:h-80"
             />
           
-          <div className="flex flex-col items-start justify-evenly gap-8 h-96 xl:w-1/2 w-full">
+          <div className="flex flex-col items-start justify-evenly 2xl:gap-8 gap-4 h-96 xl:w-1/2 w-full">
               <motion.h1
                 initial={{ x: '100vw' }}
                 animate={{ x: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-royalBlue text-4xl xl:text-7xl uppercase">{name}</motion.h1>
+                className="text-royalBlue text-4xl md:text-5xl 2xl:text-7xl uppercase">{name}</motion.h1>
             
               <motion.p
                 initial={{ x: '100vw' }}

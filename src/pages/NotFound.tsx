@@ -16,7 +16,7 @@ const NotFound = () => {
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5}}
-          className="text-3xl xl:text-6xl sm:text-4xl text-royalBlue"
+          className="text-3xl 2xl:text-6xl sm:text-4xl text-royalBlue"
         >
           It seems like you're lost
         </motion.h1>

@@ -26,7 +26,7 @@ const FormSubmited = () => {
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5}}
-          className="text-base xl:text-6xl sm:text-2xl text-royalBlue"
+          className="text-base 2xl:text-6xl xl:text-4xl sm:text-2xl text-royalBlue"
         >
           Hello, <span className="text-eggPlant">{params.name}.</span> Thank you for contacting me!
         </motion.h1>
@@ -55,7 +55,7 @@ const FormSubmited = () => {
           initial={{ x: '100vw' }}
           animate={{ x: 0 }}
           transition={{ duration: 0.7}}
-          src={thanks} alt="Thankfulness Image" className="2xl:h-72 xl:h-64 hidden xl:block"
+          src={thanks} alt="Thankfulness Image" className="2xl:h-72 xl:h-60 hidden xl:block"
         />
       </div>
   )
