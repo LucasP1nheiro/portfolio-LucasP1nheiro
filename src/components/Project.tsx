@@ -19,13 +19,15 @@ const Project = ({ name }: ProjectProps) => {
        name: "PomodoroApp",
       description: "When i started my journey as a developer, i always struggled to keep myself focused for long periods of time. Therefore, i've created this app to help me  be more productive.",
       image: pomodoro,
-      live: "https://mymdb-seven.vercel.app"
+      live: "pomodoro-app-sepia.vercel.app",
+      source: "https://github.com/LucasP1nheiro/PomodoroApp"
     },
     {
       name: "Portfolio",
       description: "Project built with the purpose of showing people some of my work and catch eye of recruiters to land my first job.",
       image: portfolio,
-      live: "https://mymdb-seven.vercel.app"
+      live: "https://portfolio-lucasp1nheiro.vercel.app",
+      source: "https://github.com/LucasP1nheiro/portfolio-LucasP1nheiro"
     },
     {
       name: "MyMDB",
