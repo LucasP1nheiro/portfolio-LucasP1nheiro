@@ -19,7 +19,7 @@ const Project = ({ name }: ProjectProps) => {
        name: "PomodoroApp",
       description: "When i started my journey as a developer, i always struggled to keep myself focused for long periods of time. Therefore, i've created this app to help me  be more productive.",
       image: pomodoro,
-      live: "pomodoro-app-sepia.vercel.app",
+      live: "https://pomodoro-app-sepia.vercel.app",
       source: "https://github.com/LucasP1nheiro/PomodoroApp"
     },
     {
@@ -33,7 +33,8 @@ const Project = ({ name }: ProjectProps) => {
       name: "MyMDB",
       description: "The MyMDB is a movie search application that allows users to search movies and TV shows and see some informations about them or discover new ones.",
       image: mymdb,
-      live: "https://mymdb-seven.vercel.app"
+      live: "https://mymdb-seven.vercel.app",
+      source: "https://github.com/LucasP1nheiro/portfolio-LucasP1nheiro"
     },
     {
       name: "Coming Soon",
@@ -82,7 +83,7 @@ const Project = ({ name }: ProjectProps) => {
                 transition={{ duration: 1 }}
                 className="w-full flex gap-4  sm:justify-start"
               >
-                  <a href="https://github.com/LucasP1nheiro/PomodoroApp" className="btn">
+                  <a href={project.source} className="btn">
                       <img src={github} alt="" className="h-8 z-50"/>
                       <span className="text-paleBlue text-sm sm:text-xl z-50">Source Code</span>
                 </a>
