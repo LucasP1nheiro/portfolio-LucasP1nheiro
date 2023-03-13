@@ -34,7 +34,7 @@ const Project = ({ name }: ProjectProps) => {
       description: "The MyMDB is a movie search application that allows users to search movies and TV shows and see some informations about them or discover new ones.",
       image: mymdb,
       live: "https://mymdb-seven.vercel.app",
-      source: "https://github.com/LucasP1nheiro/portfolio-LucasP1nheiro"
+      source: "https://github.com/LucasP1nheiro/mymdb"
     },
     {
       name: "Coming Soon",
