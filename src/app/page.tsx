@@ -1,6 +1,7 @@
 import Skills from '@/components/Skills'
 import About from '../components/About'
 import getMyAge from '../utils/getMyAge'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <About />
       <Skills />
+      <Contact />
     </main>
   )
 }
