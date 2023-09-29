@@ -9,7 +9,7 @@ import React from 'react'
 const About = () => {
   return (
     <section className="mx-auto flex w-3/5 flex-col items-start justify-center gap-8 ">
-      <h1 className="bg-gradient-to-r from-[#2193b0] to-[#6dd5ed] bg-clip-text text-5xl font-bold text-transparent">
+      <h1 className="bg-gradient-to-r from-[#9488FE] to-[#88CFF2] bg-clip-text text-5xl font-bold text-transparent">
         About me
       </h1>
       <div className="prose">
