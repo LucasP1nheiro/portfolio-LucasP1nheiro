@@ -27,7 +27,7 @@ const About = () => {
               <HoverCardTrigger
                 href="https://www.ifsp.edu.br/"
                 target="_blank"
-                className="text-primary underline transition-all duration-200 hover:cursor-pointer hover:text-[#6dd5ed]"
+                className="text-primary underline transition-all duration-200 hover:cursor-pointer hover:text-[#88CFF2]"
               >
                 @IFSP.
               </HoverCardTrigger>
