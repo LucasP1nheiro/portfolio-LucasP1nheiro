@@ -24,9 +24,6 @@ const Header = () => {
             <li>
               <NavItem path="projects" />
             </li>
-            <li>
-              <NavItem path="about" />
-            </li>
           </div>
         </ul>
       </nav>
