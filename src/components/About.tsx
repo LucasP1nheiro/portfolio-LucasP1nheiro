@@ -8,7 +8,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className="mx-auto flex w-3/5 flex-col items-start justify-center gap-8 ">
+    <section className="mx-auto flex w-full flex-col items-center justify-center gap-8 lg:w-3/5 lg:items-start ">
       <h1 className="bg-gradient-to-r from-[#9488FE] to-[#88CFF2] bg-clip-text text-5xl font-bold text-transparent">
         About me
       </h1>
@@ -27,7 +27,7 @@ const About = () => {
               <HoverCardTrigger
                 href="https://www.ifsp.edu.br/"
                 target="_blank"
-                className="text-primary underline transition-all duration-200 hover:cursor-pointer hover:text-[#88CFF2]"
+                className="text-[#9488FE] underline transition-all duration-200 hover:cursor-pointer hover:text-[#9488FE] lg:text-primary"
               >
                 @IFSP.
               </HoverCardTrigger>
