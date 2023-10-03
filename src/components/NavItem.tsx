@@ -15,7 +15,7 @@ const NavItem = ({ path }: NavItemProps) => {
 
   return (
     <Link
-      href={path}
+      href={`/${path}`}
       className="flex h-full flex-col items-center justify-center rounded-md p-2 duration-300 hover:bg-primary/10"
     >
       <span

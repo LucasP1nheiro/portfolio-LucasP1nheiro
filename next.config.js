@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['www.ifsp.edu.br'],
   },
+  experimental: {
+    mdxRs: true,
+  },
 }
-
-module.exports = nextConfig
+const [withMDX] = [require('@next/mdx')]
+module.exports = withMDX(nextConfig)

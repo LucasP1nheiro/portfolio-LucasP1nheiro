@@ -8,12 +8,17 @@ import mymdbImage from '../assets/mymdb-thumbnail.svg'
 import portfolioImage from '../assets/portfolio-thumbnail.svg'
 import pomodoroImage from '../assets/pomodoro-thumbnail.svg'
 import shopeaseImage from '../assets/shopease-thumbnail.svg'
+import PomodoroMarkdown from '../markdowns/pomodoro-markdown.mdx'
+import ShopEaseMarkdown from '../markdowns/shopease-markdown.mdx'
+import MovieAppMarkdown from '../markdowns/movieapp-markdown.mdx'
 
 export interface ProjectInfoProps {
   image: string
   title: string
   description: string
   stack: SkillsProps[]
+  markdown?: React.ReactNode
+  href: string
 }
 
 export const projectsInfo: ProjectInfoProps[] = [
@@ -32,6 +37,7 @@ export const projectsInfo: ProjectInfoProps[] = [
         image: tailwindcss.src,
       },
     ],
+    href: 'portfolio',
   },
   {
     title: 'TaskPro',
@@ -52,6 +58,7 @@ export const projectsInfo: ProjectInfoProps[] = [
         image: node.src,
       },
     ],
+    href: 'taskpro',
   },
   {
     title: 'ShopEase',
@@ -68,6 +75,8 @@ export const projectsInfo: ProjectInfoProps[] = [
         image: tailwindcss.src,
       },
     ],
+    markdown: <ShopEaseMarkdown />,
+    href: 'shopease',
   },
   {
     title: 'Movie App',
@@ -84,6 +93,8 @@ export const projectsInfo: ProjectInfoProps[] = [
         image: tailwindcss.src,
       },
     ],
+    markdown: <MovieAppMarkdown />,
+    href: 'movieapp',
   },
 
   {
@@ -101,5 +112,7 @@ export const projectsInfo: ProjectInfoProps[] = [
         image: tailwindcss.src,
       },
     ],
+    markdown: <PomodoroMarkdown />,
+    href: 'pomodoroapp',
   },
 ]
