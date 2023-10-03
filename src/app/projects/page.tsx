@@ -17,13 +17,7 @@ const page = () => {
 
       <section className="grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2 xl:grid-cols-3">
         {projectsInfo.map((project) => (
-          <ProjectsCard
-            key={project.title}
-            title={project.title}
-            image={project.image}
-            description={project.description}
-            stack={project.stack}
-          />
+          <ProjectsCard key={project.title} project={project} />
         ))}
       </section>
     </main>
