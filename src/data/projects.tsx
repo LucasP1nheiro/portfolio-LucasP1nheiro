@@ -21,7 +21,7 @@ export interface ProjectInfoProps {
   stack: SkillsProps[]
   markdown?: React.ReactNode
   href: string
-  githubUrl?: string
+  githubUrl: string
   deployUrl?: string
 }
 
@@ -43,6 +43,8 @@ export const projectsInfo: ProjectInfoProps[] = [
     ],
     href: 'portfolio',
     markdown: <PortfolioMarkdown />,
+    githubUrl: 'https://github.com/LucasP1nheiro/portfolio-LucasP1nheiro',
+    deployUrl: 'https://portfolio-lucas-p1nheiro.vercel.app/',
   },
   {
     title: 'TaskPro',

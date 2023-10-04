@@ -29,15 +29,14 @@ const page = ({ params: { slug } }: PageProps) => {
         </h1>
 
         <div className="flex w-full flex-col items-center gap-8 lg:w-fit lg:flex-row">
-          {project.githubUrl && (
-            <Link
-              href={project.githubUrl}
-              className="flex w-full items-center justify-center gap-2 rounded-md bg-primary p-2 transition-all duration-300 hover:bg-secondary/90 lg:w-[200px]"
-            >
-              <Github />
-              <p>Github</p>
-            </Link>
-          )}
+          <Link
+            href={project.githubUrl}
+            className="flex w-full items-center justify-center gap-2 rounded-md bg-primary p-2 transition-all duration-300 hover:bg-secondary/90 lg:w-[200px]"
+          >
+            <Github />
+            <p>Github</p>
+          </Link>
+
           {project.deployUrl && (
             <Link
               href={project.deployUrl}
