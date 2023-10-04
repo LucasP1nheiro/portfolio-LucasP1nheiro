@@ -37,15 +37,13 @@ const page = ({ params: { slug } }: PageProps) => {
             <p>Github</p>
           </Link>
 
-          {project.deployUrl && (
-            <Link
-              href={project.deployUrl}
-              className="flex w-full items-center justify-center gap-2 rounded-md bg-primary p-2 transition-all duration-300 hover:bg-secondary/90 lg:w-[200px]"
-            >
-              <ArrowUpRight />
-              <p>Live project</p>
-            </Link>
-          )}
+          <Link
+            href={project.deployUrl}
+            className="flex w-full items-center justify-center gap-2 rounded-md bg-primary p-2 transition-all duration-300 hover:bg-secondary/90 lg:w-[200px]"
+          >
+            <ArrowUpRight />
+            <p>Live project</p>
+          </Link>
         </div>
       </div>
 

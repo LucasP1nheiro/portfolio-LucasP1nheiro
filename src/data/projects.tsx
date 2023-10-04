@@ -22,7 +22,7 @@ export interface ProjectInfoProps {
   markdown?: React.ReactNode
   href: string
   githubUrl: string
-  deployUrl?: string
+  deployUrl: string
 }
 
 export const projectsInfo: ProjectInfoProps[] = [
@@ -65,10 +65,10 @@ export const projectsInfo: ProjectInfoProps[] = [
         image: node.src,
       },
     ],
-
     href: 'taskpro',
     markdown: <TaskProMarkdown />,
     githubUrl: 'https://github.com/LucasP1nheiro/task-pro',
+    deployUrl: 'https://task-pro-lyart.vercel.app/',
   },
   {
     title: 'ShopEase',
