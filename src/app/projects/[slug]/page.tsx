@@ -21,7 +21,7 @@ const page = ({ params: { slug } }: PageProps) => {
 
   return (
     <main className="mx-auto flex min-h-screen w-full flex-col items-start justify-center space-y-12 px-4 py-36 md:w-3/5 md:px-0">
-      <div className="flex w-full flex-col  justify-between gap-12 lg:flex-row lg:items-center">
+      <div className="flex w-full flex-col  justify-between gap-12 text-center lg:flex-row lg:items-center">
         <h1
           className={`bg-gradient-to-r from-[#9488FE] to-[#88CFF2] bg-clip-text text-5xl font-bold text-transparent`}
         >

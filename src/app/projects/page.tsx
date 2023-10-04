@@ -15,7 +15,7 @@ const page = () => {
         I&apos;ve selected to showcase my skills as a developer.
       </p>
 
-      <section className="grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2 xl:grid-cols-3">
+      <section className="grid w-5/6 grid-cols-1 gap-16 md:grid-cols-2 2xl:grid-cols-3">
         {projectsInfo.map((project) => (
           <ProjectsCard key={project.title} project={project} />
         ))}
