@@ -11,6 +11,9 @@ import shopeaseImage from '../assets/shopease-thumbnail.svg'
 import PomodoroMarkdown from '../markdowns/pomodoro-markdown.mdx'
 import ShopEaseMarkdown from '../markdowns/shopease-markdown.mdx'
 import MovieAppMarkdown from '../markdowns/movieapp-markdown.mdx'
+import TaskProMarkdown from '../markdowns/taskpro-markdown.mdx'
+import PortfolioMarkdown from '../markdowns/portfolio-markdown.mdx'
+import { title } from 'process'
 
 export interface ProjectInfoProps {
   image: string
@@ -19,6 +22,8 @@ export interface ProjectInfoProps {
   stack: SkillsProps[]
   markdown?: React.ReactNode
   href: string
+  githubUrl?: string
+  deployUrl?: string
 }
 
 export const projectsInfo: ProjectInfoProps[] = [
@@ -38,6 +43,7 @@ export const projectsInfo: ProjectInfoProps[] = [
       },
     ],
     href: 'portfolio',
+    markdown: <PortfolioMarkdown />,
   },
   {
     title: 'TaskPro',
@@ -58,7 +64,10 @@ export const projectsInfo: ProjectInfoProps[] = [
         image: node.src,
       },
     ],
+
     href: 'taskpro',
+    markdown: <TaskProMarkdown />,
+    githubUrl: 'https://github.com/LucasP1nheiro/task-pro',
   },
   {
     title: 'ShopEase',
@@ -77,6 +86,8 @@ export const projectsInfo: ProjectInfoProps[] = [
     ],
     markdown: <ShopEaseMarkdown />,
     href: 'shopease',
+    githubUrl: 'https://github.com/LucasP1nheiro/e-commerce',
+    deployUrl: 'https://shop-ease-lucasp1nheiro.vercel.app/',
   },
   {
     title: 'Movie App',
@@ -95,6 +106,8 @@ export const projectsInfo: ProjectInfoProps[] = [
     ],
     markdown: <MovieAppMarkdown />,
     href: 'movieapp',
+    githubUrl: 'https://github.com/LucasP1nheiro/mymdb',
+    deployUrl: 'https://mymoviedb.vercel.app/',
   },
 
   {
@@ -114,5 +127,7 @@ export const projectsInfo: ProjectInfoProps[] = [
     ],
     markdown: <PomodoroMarkdown />,
     href: 'pomodoroapp',
+    githubUrl: 'https://github.com/LucasP1nheiro/PomodoroApp',
+    deployUrl: 'https://pomodoro-app-sepia.vercel.app/',
   },
 ]
