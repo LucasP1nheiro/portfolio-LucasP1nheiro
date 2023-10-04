@@ -13,7 +13,6 @@ import ShopEaseMarkdown from '../markdowns/shopease-markdown.mdx'
 import MovieAppMarkdown from '../markdowns/movieapp-markdown.mdx'
 import TaskProMarkdown from '../markdowns/taskpro-markdown.mdx'
 import PortfolioMarkdown from '../markdowns/portfolio-markdown.mdx'
-import { title } from 'process'
 
 export interface ProjectInfoProps {
   image: string
