@@ -57,7 +57,7 @@ const page = ({ params: { slug } }: PageProps) => {
       />
 
       <section
-        className={`prose w-[300px] p-2 prose-h1:text-primary prose-h2:text-primary prose-h3:text-primary prose-p:text-secondary prose-a:text-[#9488FE] prose-strong:text-[#88CFF2] prose-code:text-[#88CFF2] prose-ol:text-secondary prose-ul:text-secondary md:w-full `}
+        className={`prose w-[300px] p-2 prose-h1:text-primary prose-h2:text-primary prose-h3:text-primary prose-p:text-secondary prose-a:text-[#88CFF2] prose-strong:text-[#88CFF2] prose-ol:text-secondary prose-ul:text-secondary md:w-full `}
       >
         {project?.markdown}
       </section>
