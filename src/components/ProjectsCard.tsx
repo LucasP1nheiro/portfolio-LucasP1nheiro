@@ -16,10 +16,11 @@ const ProjectsCard = ({ project, index }: ProjectsCardProps) => {
       initial={{ opacity: 0, y: 5 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.1, delay: 0.1 * index }}
+      className="h-full w-full"
     >
       <Link
         href={`/projects/${project.href.toLocaleLowerCase()}`}
-        className="group flex flex-col items-start justify-between gap-4 rounded-md bg-primary/10 p-4 text-start transition-all duration-300 hover:bg-primary/10 lg:bg-background"
+        className="group flex h-full flex-col items-start justify-between gap-4 rounded-md bg-primary/10 p-4 text-start transition-all duration-300 hover:bg-primary/10 lg:bg-background"
       >
         <div className="space-y-5">
           <Image
