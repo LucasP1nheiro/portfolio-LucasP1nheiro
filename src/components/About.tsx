@@ -5,6 +5,7 @@ import {
 } from '../components/ui/hover-card'
 import Image from 'next/image'
 import React from 'react'
+import ifsp from '../assets/ifsp.png'
 
 const About = () => {
   return (
@@ -32,12 +33,7 @@ const About = () => {
                 @IFSP.
               </HoverCardTrigger>
               <HoverCardContent className="flex h-[100px] items-center justify-center gap-2 bg-background py-2 text-sm text-secondary">
-                <Image
-                  src={'https://www.ifsp.edu.br/images/Marca_IFSP_2015031.png'}
-                  alt="IFSP logo"
-                  width={40}
-                  height={40}
-                />
+                <Image src={ifsp.src} alt="IFSP logo" width={40} height={40} />
                 <span>IFSP - Instituto Federal de São Paulo</span>
               </HoverCardContent>
             </HoverCard>
