@@ -40,7 +40,7 @@ const page = ({ params: { slug } }: PageProps) => {
         </Link>
 
         <Link
-          href={project.githubUrl}
+          href={project.deployUrl}
           className="flex w-full items-center justify-center gap-2 rounded-md border p-[1px] py-2 text-center text-primary transition-all duration-300 hover:bg-primary/10 lg:w-[200px]"
         >
           <ArrowUpRight />
