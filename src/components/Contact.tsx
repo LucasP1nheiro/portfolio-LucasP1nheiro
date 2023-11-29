@@ -28,9 +28,11 @@ const Contact = () => {
 
       <div className="flex items-center gap-4 rounded-md border p-2 text-primary">
         <p className="text-md">lps1704@gmail.com</p>
-        <CopyToClipboard text="lps1704@gmail.com" onCopy={() => sendToast()}>
-          <Copy size={18} className="hover:cursor-pointer" />
-        </CopyToClipboard>
+        <button>
+          <CopyToClipboard text="lps1704@gmail.com" onCopy={() => sendToast()}>
+            <Copy size={18} className="hover:cursor-pointer" />
+          </CopyToClipboard>
+        </button>
         <a href="mailto:lps1704@gmail.com">
           <Send size={18} />
         </a>
