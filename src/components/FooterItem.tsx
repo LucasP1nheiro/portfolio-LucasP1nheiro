@@ -1,3 +1,5 @@
+'use client'
+
 import { socialLinksProps } from '@/data/socialLinks'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'

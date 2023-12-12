@@ -1,5 +1,3 @@
-'use client'
-
 import { socialLinks } from '@/data/socialLinks'
 import FooterItem from './FooterItem'
 
