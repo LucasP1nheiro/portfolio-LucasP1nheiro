@@ -6,7 +6,7 @@ import logo from '../assets/logo.svg'
 
 const Header = () => {
   return (
-    <header className="fixed top-0 z-50 h-[10%] w-screen border-b bg-background">
+    <header className="absolute top-0 z-50 h-[10%] w-screen ">
       <nav className="h-full">
         <ul className="mx-auto flex h-full w-3/5 items-center justify-between">
           <li>
