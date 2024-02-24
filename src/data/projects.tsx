@@ -7,10 +7,8 @@ import supabase from '@/assets/supabase.svg'
 import { SkillsProps } from './skills'
 import mymdbImage from '../assets/mymdb-thumbnail.svg'
 import portfolioImage from '../assets/portfolio-thumbnail.svg'
-import pomodoroImage from '../assets/pomodoro-thumbnail.svg'
 import shopeaseImage from '../assets/shopease-thumbnail.svg'
 import formWizardImage from '@/assets/formwizard-thumbnail.svg'
-import PomodoroMarkdown from '../markdowns/pomodoro-markdown.mdx'
 import ShopEaseMarkdown from '../markdowns/shopease-markdown.mdx'
 import MovieAppMarkdown from '../markdowns/movieapp-markdown.mdx'
 import TaskProMarkdown from '../markdowns/taskpro-markdown.mdx'
@@ -136,26 +134,5 @@ export const projectsInfo: ProjectInfoProps[] = [
     href: 'movieapp',
     githubUrl: 'https://github.com/LucasP1nheiro/mymdb',
     deployUrl: 'https://mymoviedb.vercel.app/',
-  },
-
-  {
-    title: 'Pomodoro',
-    description:
-      'The Pomodoro App is a productivity tool that helps users focus on their tasks by using the Pomodoro Technique, a time management method that involves working for a set period of time and taking short breaks in between. The app also allows users to customize the length of each session and break to suit their needs.',
-    image: pomodoroImage.src,
-    stack: [
-      {
-        name: 'React.js',
-        image: react.src,
-      },
-      {
-        name: 'Tailwind',
-        image: tailwindcss.src,
-      },
-    ],
-    markdown: <PomodoroMarkdown />,
-    href: 'pomodoroapp',
-    githubUrl: 'https://github.com/LucasP1nheiro/PomodoroApp',
-    deployUrl: 'https://pomodoro-app-sepia.vercel.app/',
   },
 ]
