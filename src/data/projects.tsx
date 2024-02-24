@@ -3,16 +3,19 @@ import tailwindcss from '../assets/tailwindcss.svg'
 import nextjs from '../assets/nextjs.svg'
 import react from '../assets/react.svg'
 import node from '../assets/node.svg'
+import supabase from '@/assets/supabase.svg'
 import { SkillsProps } from './skills'
 import mymdbImage from '../assets/mymdb-thumbnail.svg'
 import portfolioImage from '../assets/portfolio-thumbnail.svg'
 import pomodoroImage from '../assets/pomodoro-thumbnail.svg'
 import shopeaseImage from '../assets/shopease-thumbnail.svg'
+import formWizardImage from '@/assets/formwizard-thumbnail.svg'
 import PomodoroMarkdown from '../markdowns/pomodoro-markdown.mdx'
 import ShopEaseMarkdown from '../markdowns/shopease-markdown.mdx'
 import MovieAppMarkdown from '../markdowns/movieapp-markdown.mdx'
 import TaskProMarkdown from '../markdowns/taskpro-markdown.mdx'
 import PortfolioMarkdown from '../markdowns/portfolio-markdown.mdx'
+import FormWizardMarkdown from '@/markdowns/form-wizard-markdown.mdx'
 
 export interface ProjectInfoProps {
   image: string
@@ -26,6 +29,30 @@ export interface ProjectInfoProps {
 }
 
 export const projectsInfo: ProjectInfoProps[] = [
+  {
+    title: 'Form Wizard',
+    description:
+      'Form Wizard is a form builder designed to streamline the process of creating forms with ease. With a wide array of features including drag and drop functionality, analytics visualization, real-time preview, and secure user authentication, Form Wizard empowers you to create professional forms effortlessly.',
+    image: formWizardImage.src,
+    stack: [
+      {
+        name: 'Supabase',
+        image: supabase.src,
+      },
+      {
+        name: 'Next.js',
+        image: nextjs.src,
+      },
+      {
+        name: 'Tailwind',
+        image: tailwindcss.src,
+      },
+    ],
+    href: 'form-wizard',
+    markdown: <FormWizardMarkdown />,
+    githubUrl: 'https://github.com/LucasP1nheiro/form-wizard',
+    deployUrl: 'https://form-wizard-nine.vercel.app/',
+  },
   {
     title: 'Portfolio',
     description:
